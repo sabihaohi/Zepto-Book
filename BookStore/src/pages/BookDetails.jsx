@@ -69,7 +69,8 @@ const BookDetails = () => {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto mt-40 p-4 max-w-4xl bg-slate-100 rounded-lg shadow-gray-100 shadow-xl">
+      <div className="m-5 sm:m-0 md:m-0 lg:m-0 xl:m-0">
+      <div className="container mx-auto mt-40 p-4 max-w-4xl bg-slate-100 rounded-lg shadow-gray-100 shadow-xl border ">
         <div className="flex justify-between items-center">
           <button
             onClick={handleBackClick}
@@ -124,6 +125,8 @@ const BookDetails = () => {
           </div>
         </div>
       </div>
+      </div>
+      
 
       {/* Success Modal */}
       <AnimatePresence>

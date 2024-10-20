@@ -11,8 +11,7 @@ const FilterComponent = ({ onFilterChange, genres }) => {
     };
 
     return (
-        <div className="p-6 bg-slate-100 shadow-xl rounded-md max-w-2xl mx-auto border space-y-10"> {/* Updated max width and spacing */}
-            
+        <div className="p-6 bg-slate-100 shadow-xl rounded-md max-w-2xl mx-auto border space-y-10"> 
             {/* Filter Books Section */}
             <div className="filter-section">
                 <h3 className="text-xl font-bold mb-4">Filter Books</h3>

@@ -101,7 +101,7 @@ const AllBooks = ({ searchTerm }) => {
       {/* Filter and Books Section */}
       <div className="flex flex-col md:flex-row gap-5">
         {/* Filter Section */}
-        <div className="w-full md:w-1/4 pt-20">
+        <div className="w-full md:w-1/4 pt-10 sm:pt-0 md:pt-20 lg:pt-20">
           <FilterComponent genres={genres} onFilterChange={handleFilterChange} />
         </div>
 
@@ -110,7 +110,7 @@ const AllBooks = ({ searchTerm }) => {
           <h2 className="text-2xl font-bold text-center mb-10">All Books</h2>
 
         
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {currentBooks.map((book) => (
               <EachBook key={book.id} book={book} />
             ))}
